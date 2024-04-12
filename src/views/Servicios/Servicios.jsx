@@ -2,8 +2,8 @@
 import React from "react";
 import { useNavigate, NavLink } from 'react-router-dom';
 
-const Video = () => {
-    
+const Servicios = () => {
+
     const navigate = useNavigate();
 
     const backPage = () => {
@@ -12,11 +12,11 @@ const Video = () => {
 
     return(
         <>
-            <h1>Soy el video</h1>
+            <h1>Servicios</h1>
             <button onClick={backPage}>Anterior</button>
-            <NavLink to={'/redes'}><button>Siguiente</button></NavLink>
+            <NavLink to={'/cierre'}><button>Siguiente</button></NavLink>
         </>
     )
 };
 
-export default Video;
+export default Servicios;
