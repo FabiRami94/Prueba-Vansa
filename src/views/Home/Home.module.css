@@ -1,0 +1,15 @@
+
+.buttons{
+    color: white;
+    background-color: rgb(20, 51, 114);
+    border-radius: 50px;
+    border: 2px solid red;
+
+    
+    /* justify-content: center; 
+    align-items: center; 
+
+    text-align: center;
+    align-content: center;  */
+
+}
