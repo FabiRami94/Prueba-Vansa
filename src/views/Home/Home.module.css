@@ -1,15 +1,30 @@
 
+.container {
+    display: grid;
+    background-color: blue;
+    /* gap: 10px; */
+    grid-template-rows:     2fr 1fr;
+    grid-template-columns:  2fr 1fr;
+    grid-template-areas:    "name  button"
+                            "name  button";
+    height: 100vh;
+    
+}
+
 .buttons{
     color: white;
     background-color: rgb(20, 51, 114);
     border-radius: 50px;
-    border: 2px solid red;
-
-    
+    border: 2px solid red;  
     /* justify-content: center; 
     align-items: center; 
 
     text-align: center;
     align-content: center;  */
+    grid-area: button;
+}
 
+.name {  
+    background-color: red; 
+    grid-area: name;
 }
