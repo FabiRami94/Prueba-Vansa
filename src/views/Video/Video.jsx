@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useNavigate, NavLink } from 'react-router-dom';
+import style from './Video.module.css';
 
 const Video = () => {
     
@@ -12,9 +13,11 @@ const Video = () => {
 
     return(
         <>
-            <h1>Soy el video</h1>
-            <button onClick={backPage}>Anterior</button>
-            <NavLink to={'/redes'}><button>Siguiente</button></NavLink>
+            <div className={style.container}>
+                <h1>Soy el video</h1>
+                <button onClick={backPage}>Anterior</button>
+                <NavLink to={'/redes'}><button>Siguiente</button></NavLink>
+            </div>
         </>
     )
 };

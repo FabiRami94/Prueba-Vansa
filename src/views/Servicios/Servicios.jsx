@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useNavigate, NavLink } from 'react-router-dom';
+import style from './Servicios.module.css';
 
 const Servicios = () => {
 
@@ -12,9 +13,11 @@ const Servicios = () => {
 
     return(
         <>
-            <h1>Servicios</h1>
-            <button onClick={backPage}>Anterior</button>
-            <NavLink to={'/cierre'}><button>Siguiente</button></NavLink>
+            <div className={style.container}>
+                <h1>Servicios</h1>
+                <button onClick={backPage}>Anterior</button>
+                <NavLink to={'/cierre'}><button>Siguiente</button></NavLink>
+            </div>
         </>
     )
 };

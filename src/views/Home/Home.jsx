@@ -16,12 +16,10 @@ const Home = () => {
                 </div>
                 <div className={style.womanImage}></div>
                 <div className={style.buttonContainer}>
-                    <NavLink to={'/info'}>
-                        <button className={style.buttons}> INICIAR 
-                            {/* <div style={{display: 'inline-block', height: '20px'}}>
-                                <IoIosArrowForward style={{paddingTop:'20%'}} size={20}/>
-                            </div> */}
-                        </button>
+                    <NavLink to={'/info'} style={{textDecoration: 'none'}}>
+                        <div className={style.buttons}> INICIAR 
+                            <IoIosArrowForward style={{marginLeft: '10px'}} size={25}/>
+                        </div>
                     </NavLink>
                 </div>
                 <div className={style.test}>
@@ -32,7 +30,12 @@ const Home = () => {
                         <h1>FABIÁN RAMÍREZ</h1>
                     </div>
                 </div>
-                <div className={style.vacant}></div>
+                <div className={style.vacant}>
+                    <div className={style.containerVacant}>
+                        <h1>Vacante</h1>
+                        <h1>Front End</h1>
+                    </div>
+                </div>
             </div>
         </>
     )
