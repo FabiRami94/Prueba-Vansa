@@ -1,0 +1,84 @@
+
+.generalDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.itemContainer{
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin: 10px 0px;
+
+    display: flex; /* Alinea Icono interno */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Ball*/
+
+.ball{
+    background-color: rgb(20, 51, 114);
+    border-radius: 50px;
+    border: 2px solid white;  
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    /* transform: translateX(40%); */
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+    display: flex; /* Alinea Icono interno */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball:hover{
+    border: 2px solid rgb(50, 85, 160);  
+}
+
+.links{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0px 30px;
+}
+
+.links p{
+    color: rgb(20, 51, 114);
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.links span{
+    color: rgb(20, 51, 114);
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px; 
+}
+
+.closeDiv {
+    opacity: 0;
+    visibility: hidden;
+    max-width: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease-in-out, max-width 0.8s ease-in-out, visibility 0.8s ease-in-out;
+}
+  
+.openDiv {
+    opacity: 1;
+    visibility: visible;
+    max-width: 1000px;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, max-width 1s ease-in-out, visibility 1s ease-in-out;
+}

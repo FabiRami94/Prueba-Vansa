@@ -27,9 +27,12 @@
 }
 
 .videoComponent{
-    background-color: red;
     grid-column: 1/2;
     grid-row: 2/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .people{
