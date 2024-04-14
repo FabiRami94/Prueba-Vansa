@@ -57,25 +57,48 @@
     margin: 0 auto;
 }
 
+.ball{
+    background-color: rgb(20, 51, 114);
+    border-radius: 50px;
+    border: 2px solid white;  
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex; /* Alinea Icono interno */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .about{
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: white;
+    width: 30rem;
 }
 
 .about span{
     color: rgb(20, 51, 114);
     font-family: "Quicksand", sans-serif;
     font-size: 20px;
+    padding: 2rem;
 }
 
-.ball{
-    background-color: rgb(20, 51, 114);
-    border-radius: 50px;
-    border: 2px solid white;  
-    height: 2rem;
-    width: 2rem;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+.closeDiv {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease-in-out, max-height 0.8s ease-in-out, visibility 0.8s ease-in-out;
+}
+  
+.openDiv {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, max-height 1s ease-in-out, visibility 1s ease-in-out;
 }

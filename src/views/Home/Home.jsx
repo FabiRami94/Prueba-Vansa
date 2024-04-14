@@ -5,7 +5,6 @@ import style from './Home.module.css';
 import { IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {  
-    // https://i.ibb.co/PQ34VY1/Fondo-Vansa.png
     return(
         <>
             <div className={style.container}>

@@ -13,27 +13,27 @@ const Photo = () => {
  
     return(
         <>
-            <div className={style.generalDiv}>
-                <div className={style.note}>
-                    <span>¡Haz click aquí!</span>
-                </div>
-                <div onClick={openPhotoHandler} className={style.photo}>
-                    <img src="https://i.ibb.co/cYj6Lw6/Foto-profesional.jpg" alt="Personal Photo"/>
-                    <div className={style.ball}>
-                        { 
-                            openPhoto ? 
-                            <TiArrowSortedDown size={40} color="white"/> : 
-                            <TiArrowSortedUp size={40} color="white"/>
-                        }
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <div className={style.generalDiv}>
+                    <div className={style.note}>
+                        <span>¡Haz click aquí!</span>
+                    </div>
+                    <div onClick={openPhotoHandler} className={style.photo}>
+                        <img src="https://i.ibb.co/cYj6Lw6/Foto-profesional.jpg" alt="Personal Photo"/>
+                        <div className={style.ball}>
+                            { 
+                                openPhoto ? 
+                                <TiArrowSortedDown size={40} color="white"/> : 
+                                <TiArrowSortedUp size={40} color="white"/>
+                            }
+                        </div>
                     </div>
                 </div>
-                {  
-                    openPhoto ?
+                <div className={ !openPhoto ? `${style.closeDiv}` : `${style.openDiv}`}>
                     <div className={style.about}>
                         <span>Hola sobre mí</span>
-                    </div> :
-                    null
-                }
+                    </div>
+                </div>
             </div>
         </>
     )

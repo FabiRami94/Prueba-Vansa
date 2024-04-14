@@ -11,6 +11,13 @@
     width: 100vw;  
 }
 
+    @media(max-width: 768px){
+        .container{
+            grid-template-rows:     3fr 1fr 1fr 3fr 1fr;
+            grid-template-columns:  1fr;
+        }
+    }
+
 .buttons{
     display: flex;
     flex-direction: row;
@@ -61,11 +68,23 @@
     grid-row: 2/6;  
 }
 
+    @media(max-width: 768px){
+        .manImage{
+            display: none;
+        }
+    }
+
 .womanImage{
     background-color: pink; 
     grid-column: 4/6;
     grid-row: 2/6;  
 }
+
+    @media(max-width: 768px){
+        .womanImage{
+            display: none;
+        }
+    }
 
 .test{
     grid-column: 3/4;
@@ -90,12 +109,24 @@
     margin-bottom: 5%;
 }
 
+    @media(max-width: 768px){
+        .vacant{
+            margin-bottom: 20%;
+        }
+    }
+
 .welcome h1{
     color: rgb(20, 51, 114);
     margin: 0px;
     font-family: "Quicksand", sans-serif;
     font-size: 45px; 
 }
+
+    @media(max-width: 768px){
+        .welcome h1{
+            font-size: 30px; 
+        }
+    }
 
 .test h1{
     color: rgb(190, 128, 105);
@@ -105,12 +136,24 @@
     font-weight: 600;
 }
 
+@media(max-width: 768px){
+    .test h1{
+        font-size: 40px; 
+    }
+}
+
 .name h1{
     color: white;
     margin: 0px;
     font-family: "Quicksand", sans-serif;
     font-size: 45px; 
 }
+
+    @media(max-width: 768px){
+        .name h1{
+            font-size: 30px; 
+        }
+    }
 
 .containerName{
     /*display: inline-block; Eliminar extención completa*/
@@ -126,6 +169,12 @@
     font-family: "Quicksand", sans-serif;
     font-size: 34px; 
 }
+
+    @media(max-width: 768px){
+        .vacant h1{
+            font-size: 25px; 
+        }
+    }
 
 .containerVacant{
     display: inline-block;
