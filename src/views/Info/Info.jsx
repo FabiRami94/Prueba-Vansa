@@ -5,6 +5,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import style from './Info.module.css';
 
+import Photo from "../../components/Photo/Photo";
+
 const Info = () => {
 
     const navigate = useNavigate();
@@ -16,15 +18,17 @@ const Info = () => {
     return(
         <>
             <div className={style.container}>
-                <h1>Soy en info</h1>
+                <div className={style.manImage}></div>
+                <div className={style.photo}>
+                    <Photo></Photo>
+                </div>
                 <div className={style.doubleButtons}>
                     <div onClick={backPage} className={style.buttons}>
                         <IoIosArrowBack style={{marginRight: '10px'}} size={25}/>
                         ANTERIOR
                     </div>
-                    {/* <button onClick={backPage}>Anterior</button> */}
                     <NavLink to={'/video'} style={{textDecoration: 'none'}}>
-                        <div className={style.buttons}>SIGUIENTE 
+                        <div style={{marginLeft:'10px'}} className={style.buttons}>SIGUIENTE 
                             <IoIosArrowForward style={{marginLeft: '10px'}} size={25}/>
                         </div>
                     </NavLink>
