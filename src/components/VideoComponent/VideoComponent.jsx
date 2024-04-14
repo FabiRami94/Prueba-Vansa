@@ -22,7 +22,7 @@ const VideoComponent = () => {
                 <div onClick={openVideoHandler} className={style.videoContainer}>
                     {/* <img src="https://i.ibb.co/cYj6Lw6/Foto-profesional.jpg" alt="Personal Photo"/> */}
                     <div className={style.ball}>
-                        <IoMdArrowDropright  size={40} color="white"/> : 
+                        <IoMdArrowDropright  size={40} color="white"/>
                     </div>
                 </div>
             </div>

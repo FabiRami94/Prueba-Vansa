@@ -13,7 +13,8 @@ const SocialMedia = () => {
                     <span>¡Haz click en cada ítem!</span>
                 </div>
                 { itemsMedia.map((item) => (
-                    <ItemMedia 
+                    <ItemMedia
+                        key={item.name} 
                         icon = {item.icon} 
                         link = {item.link}
                         direction = {item.direction}
@@ -21,8 +22,7 @@ const SocialMedia = () => {
                         name = {item.name}
                     ></ItemMedia>
                 ))}
-            </div>
-        
+            </div>     
         </>
     )
 };

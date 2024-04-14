@@ -16,7 +16,7 @@
     grid-row: 1/2;
 
     align-content: center; 
-    margin-left: 5%;
+    margin: 5% 0 0 5%;
 }
 
 .serviciosTitle h1{
@@ -27,9 +27,12 @@
 }
 
 .serviciosComponent{
-    background-color: red;
     grid-column: 2/3;
     grid-row: 2/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Buttons*/
