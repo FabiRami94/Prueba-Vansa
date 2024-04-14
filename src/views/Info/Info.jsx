@@ -1,10 +1,9 @@
 
 import React from "react";
 import { useNavigate, NavLink } from 'react-router-dom';
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
-import style from './Info.module.css';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
+import style from './Info.module.css';
 import Photo from "../../components/Photo/Photo";
 
 const Info = () => {

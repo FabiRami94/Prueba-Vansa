@@ -18,6 +18,8 @@
         }
     }
 
+/* Buttons */
+
 .buttons{
     display: flex;
     flex-direction: row;
@@ -53,6 +55,7 @@
     grid-column: 5/6;
     grid-row: 5/6;
     z-index: 2;
+    margin: 0 5% 18% 0
 }
 
 .welcome {   
