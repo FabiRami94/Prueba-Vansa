@@ -1,13 +1,13 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import style from './Home.module.css';
 import { IoIosArrowForward } from "react-icons/io";
+import style from './Home.module.css';
 
 const Home = () => {  
     return(
         <>
-            <div className={style.Principalcontainer}>
+            <div className={style.container}>
                 {/* <div className={style.manImage}>
                     <img src="https://i.ibb.co/hRrPNDn/Manp1.png" alt="Man Page1"/>
                 </div>
