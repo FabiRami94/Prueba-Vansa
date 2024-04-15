@@ -9,12 +9,24 @@
     border-radius: 20px;
 }
 
+    @media(max-width: 768px){
+        .principalContainer{
+            width: 20rem;; 
+        }
+    }
+
 .secondaryContainer{
     position: relative;
     display: flex;
     flex-direction: row;
     padding: 40px;
 }
+
+    @media(max-width: 768px){
+        .secondaryContainer{
+            flex-direction: column;
+        }
+    }
     
 .ball{
     background-color: rgb(20, 51, 114);
@@ -34,6 +46,15 @@
     border: 2px solid rgb(50, 85, 160);  
 }
 
+.disabled{
+    background-color: rgb(133, 143, 171);
+    cursor: auto;
+}
+
+.disabled:hover{
+    border: 2px solid white; 
+}
+
 .textContent h3 {
     color: rgb(20, 51, 114);
     margin: 0px;
@@ -50,8 +71,48 @@
     width: 65%;
 }
 
+    @media(max-width: 768px){
+        .textContent p{
+            width: 95%;
+        }
+    }
+
 .iconContent{
     position: absolute;
     top: 30%;
     right: 10%;
+}
+
+    @media(max-width: 768px){
+        .iconContent{
+            display: none;
+        }
+    }
+
+.pageDotContainer {
+    margin: 0 5px;
+}
+
+    @media(max-width: 768px){
+        .pageDotContainer{
+            margin: 5px 0;
+        }
+    }
+
+.pageDot {
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(133, 143, 171); /* No activo */
+}
+
+    @media(max-width: 768px){
+        .pageDot{
+            width: 10px;
+            height: 40px;
+        }
+    }
+
+.activeDot {
+    background-color: rgb(20, 51, 114); /* Punto activo */
 }

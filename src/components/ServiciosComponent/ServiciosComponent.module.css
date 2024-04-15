@@ -20,6 +20,12 @@
     margin-bottom: 40px;
 }
 
+    @media(max-width: 768px){
+        .note{
+            margin-bottom: 10px;
+        }
+    }
+
 .note::after {
     content: '';
     position: absolute;

@@ -48,6 +48,13 @@
     width: 30rem;
 }
 
+    @media(max-width: 768px){
+        .videoContainer{
+            width: 20rem;
+            height: 15rem;
+        }
+    }
+
 .ball{
     background-color: rgb(20, 51, 114);
     border-radius: 50px;
@@ -55,7 +62,7 @@
     height: 3rem;
     width: 3rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     /* transform: translateY(-50%); */

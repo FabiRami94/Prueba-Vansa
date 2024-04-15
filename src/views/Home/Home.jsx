@@ -8,7 +8,7 @@ const Home = () => {
     return(
         <>
             <div className={style.container}>
-                {/* <div className={style.manImage}>
+                <div className={style.manImage}>
                     <img src="https://i.ibb.co/hRrPNDn/Manp1.png" alt="Man Page1"/>
                 </div>
                 <div className={style.welcome}>
@@ -38,7 +38,7 @@ const Home = () => {
                         <h1>Vacante</h1>
                         <h1>Front End</h1>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     )
