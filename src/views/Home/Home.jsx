@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Home = () => {  
     return(
         <>
-            <div className={style.container}>
+            <div className={style.Principalcontainer}>
                 <div className={style.manImage}>
                     <img src="https://i.ibb.co/hRrPNDn/Manp1.png" alt="Man Page1"/>
                 </div>
