@@ -31,7 +31,7 @@ const Photo = () => {
                 </div>
                 <div className={ !openPhoto ? `${style.closeDiv}` : `${style.openDiv}`}>
                     <div className={style.about}>
-                        <span>Hola sobre mí</span>
+                        <span>La programación es un reto y una fuente constante de motivación, estoy listo para transformar ideas en realidad con creatividad y determinación. Cada desafío es una oportunidad para construir y crecer, porque "Si solo haces lo que ya sabes hacer, no vas a llegar a ser más de lo que eres hoy" Kungfu P.</span>
                     </div>
                 </div>
             </div>

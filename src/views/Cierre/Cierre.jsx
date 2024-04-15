@@ -10,7 +10,9 @@ const Cierre = () => {
     return(
         <>
             <div className={style.container}>
-                <div className={style.peopleImage}></div>
+                <div className={style.peopleImage}>
+                    <img src="https://i.ibb.co/cFxRPqx/Peoplep6.png" alt="People Page6"/>
+                </div>
                 <div className={style.end}>
                     <h1>¡Hemos</h1>
                     <h1>culminado!</h1>

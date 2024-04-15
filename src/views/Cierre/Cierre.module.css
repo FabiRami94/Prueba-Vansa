@@ -11,11 +11,27 @@
     width: 100vw;  
 }
 
+    @media(max-width: 768px){
+        .container{
+            grid-template-rows:     1fr 1fr 1fr;
+            grid-template-columns:  1fr;
+        }
+    }
+
 .peopleImage{
-    background-color: green;
     grid-column: 1/2;
     grid-row: 1/4;
+
+    justify-self: end;
+    align-self: end;
+    margin: 0 15% 0 0;
 }
+
+    @media(max-width: 768px){
+        .peopleImage{
+            display: none;
+        }
+    }
 
 .end{
     grid-column: 2/3;
@@ -24,12 +40,25 @@
     margin-left: 5%;
 }
 
+    @media(max-width: 768px){
+        .end{
+            grid-column: 1/2;
+            margin-left: 10%;
+        }
+    }
+
 .end h1{
     color: rgb(20, 51, 114);
     margin: 0px;
     font-family: "Quicksand", sans-serif;
     font-size: 60px; 
 }
+
+    @media(max-width: 768px){
+        .end h1{
+            font-size: 40px;
+        }
+    }
 
 .farewell{
     grid-column: 2/3;
@@ -38,6 +67,13 @@
     width: 65%;
     margin-top: 30px;
 }
+
+    @media(max-width: 768px){
+        .farewell{
+            grid-column: 1/2;
+            margin-left: 10%;
+        }
+    }
 
 .farewell p{
     color: rgb(20, 51, 114);
@@ -66,6 +102,12 @@
     align-self: end;
     margin: 0 5% 5% 0
 }
+
+    @media(max-width: 768px){
+        .doubleButtons{
+            grid-column: 1/2;
+        }
+    }
 
 .buttons{
     display: flex;

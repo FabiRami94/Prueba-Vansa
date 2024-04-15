@@ -17,7 +17,9 @@ const Info = () => {
     return(
         <>
             <div className={style.container}>
-                <div className={style.manImage}></div>
+                <div className={style.manImage}>
+                    <img src="https://i.ibb.co/bFd5CdS/Manp2.png" alt="Man Page2"/>
+                </div>
                 <div className={style.photo}>
                     <Photo></Photo>
                 </div>

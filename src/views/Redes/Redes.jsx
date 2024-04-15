@@ -23,7 +23,9 @@ const Redes = () => {
                 <div className={style.mediaComponent}>
                     <SocialMedia></SocialMedia>
                 </div>
-                <div className={style.people}></div>
+                <div className={style.woman}>
+                    <img src="https://i.ibb.co/NFzKBwJ/Womanp4.png" alt="Woman Page4"/>
+                </div>
                 <div className={style.doubleButtons}>
                     <div onClick={backPage} className={style.buttons}>
                         <IoIosArrowBack style={{marginRight: '10px'}} size={25}/>

@@ -23,7 +23,9 @@ const Video = () => {
                 <div className={style.videoComponent}>
                     <VideoComponent></VideoComponent>
                 </div>
-                <div className={style.people}></div>
+                <div className={style.people}>
+                    <img src="https://i.ibb.co/Js4fdnV/Peoplep3.png" alt="People Ppage3"/>
+                </div>
                 <div className={style.doubleButtons}>
                     <div onClick={backPage} className={style.buttons}>
                         <IoIosArrowBack style={{marginRight: '10px'}} size={25}/>

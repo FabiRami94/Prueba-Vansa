@@ -11,6 +11,13 @@
     width: 100vw;  
 }
 
+    @media(max-width: 768px){
+        .container{
+            grid-template-rows:     1fr 3fr 1fr;
+            grid-template-columns:  1fr;
+        }
+    }
+
 .mediaTitle{
     grid-column: 2/3;
     grid-row: 1/2;
@@ -19,12 +26,24 @@
     align-content: center; 
 }
 
+    @media(max-width: 768px){
+        .mediaTitle{
+            grid-column: 1/2;
+        }
+    }
+
 .mediaTitle h1{
     color: rgb(20, 51, 114);
     margin: 0px;
     font-family: "Quicksand", sans-serif;
     font-size: 45px; 
 }
+
+    @media(max-width: 768px){
+        .mediaTitle h1{
+            font-size: 30px; 
+        }
+    }
 
 .mediaComponent{
     grid-column: 2/3;
@@ -35,11 +54,26 @@
     align-items: center;
 }
 
-.people{
-    background-color: green;
+    @media(max-width: 768px){
+        .mediaComponent{
+            grid-column: 1/2;
+        }
+    }
+
+.woman{
     grid-column: 1/2;
     grid-row: 1/4;
+
+    justify-self: end;
+    align-self: end;
+    margin: 0 15% 0 0;
 }
+
+    @media(max-width: 768px){
+        .woman{
+            display: none;
+        }
+    }
 
 /*Buttons*/
 
@@ -52,6 +86,12 @@
     align-self: end;
     margin: 0 5% 5% 0
 }
+
+    @media(max-width: 768px){
+        .doubleButtons{
+            grid-column: 1/2;
+        }
+    }
 
 .buttons{
     display: flex;
