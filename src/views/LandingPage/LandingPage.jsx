@@ -16,6 +16,21 @@ const LandingPage = () => {
                 <div className={style.womanImage}>
                     <img src="https://i.ibb.co/DkpY8D8/Womanp1.png" alt="Woman Page1"/>
                 </div>
+
+                <div className={style.test}>
+                    <h1>Prueba técnica de:</h1>
+                </div>
+                <div className={style.name}>
+                    <div className={style.containerName}>
+                        <h1>FABIÁN RAMÍREZ</h1>
+                    </div>
+                </div>
+                <div className={style.vacant}>
+                    <div className={style.containerVacant}>
+                        <h1>Vacante</h1>
+                        <h1>Front End</h1>
+                    </div>
+                </div>
             </div>      
         </>
     )

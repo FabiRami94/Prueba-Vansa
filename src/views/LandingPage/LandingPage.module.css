@@ -61,3 +61,116 @@
             display: none;
         }
     }
+
+
+.test{
+    grid-column: 3/4;
+    grid-row: 2/3;  
+    text-align: center;
+    align-content: center;
+}
+    
+    @media(max-width: 768px){
+        .test{
+            grid-column: 1/2;
+        }
+    }
+    
+.name{
+    grid-column: 3/4;
+    grid-row: 3/4;  
+    text-align: center;
+    align-content: center;
+    margin-top: 2.5%;
+}
+    
+    @media(max-width: 768px){
+        .name{
+            grid-column: 1/2;
+        }
+    }
+        
+.vacant{
+    grid-column: 3/4;
+    grid-row: 4/5;  
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 5%;
+}
+        
+    @media(max-width: 768px){
+        .vacant{
+            grid-column: 1/2;
+            margin: 0 5% 10% 0;
+        }
+    }
+        
+.welcome h1{
+    color: rgb(20, 51, 114);
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px; 
+}
+    
+    @media(max-width: 768px){
+        .welcome h1{
+            font-size: 30px; 
+        }
+     }
+        
+.test h1{
+    color: rgb(190, 128, 105);
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 60px; 
+    font-weight: 600;
+}
+    
+    @media(max-width: 768px){
+        .test h1{
+            font-size: 40px; 
+        }
+    }
+    
+.name h1{
+    color: white;
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px; 
+}
+    
+    @media(max-width: 768px){
+        .name h1{
+            font-size: 30px; 
+        }
+    }
+    
+.containerName{
+    /*display: inline-block; Eliminar extención completa*/
+    /*padding: 2px 20px;*/
+    margin: 0 5%;
+    border-radius: 50px;
+    background-color: rgb(190, 128, 105);
+}
+    
+.vacant h1{
+    color: rgb(190, 128, 105);
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 34px; 
+}
+    
+    @media(max-width: 768px){
+        .vacant h1{
+            font-size: 25px; 
+        }
+    }
+    
+.containerVacant{
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+}
